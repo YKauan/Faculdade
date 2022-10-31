@@ -1,0 +1,287 @@
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}{\f1\fnil Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\tx720\cf1\f0\fs38 =============QST01===========================\par
+algoritmo "Qst01Vetor"\par
+    var nu1: vetor [1..6] de real\par
+        nu2: vetor [1..6] de real\par
+        MD: vetor [1..6] de real\par
+        NP1,NP2,S: REAL\par
+        ALU: vetor [1..6] de caractere\par
+        alun: caractere\par
+        i: inteiro\par
+    inicio\par
+    \par
+    para i de 1 ate 6 faca\par
+             escreva("Digite o nome do aluno: ")\par
+             leia(alun)\par
+             escreva("Digite sua nota referente a NP1: ")\par
+             leia(NP1)\par
+             escreva("Digite sua nota referente a NP2: ")\par
+             leia(NP2)\par
+             ALU[i]<- alun\par
+             nu1[i]<-NP1\par
+             nu2[i]<-NP2\par
+             S <- NP1 + NP2\par
+             S <- S / 2\par
+             MD[i]<- S\par
+        fimpara\par
+        para i de 1 ate 6 faca\par
+         escreval(ALU[i],":")\par
+   \tab\tab escreval("Sua nota N1 e: ", nu1[i], " Sua nota N2 e: ",nu2[i]," Sua media e: ",MD[i])\par
+\tab fimpara\par
+    \par
+    fimalgoritmo\par
+=============QST01===========================\par
+/////////////////////////////////////////////////////////////////////////////\par
+/////////////////////////////////////////////////////////////////////////////\par
+=============QST02===========================\par
+algoritmo "Qst02Vetor"\par
+    var n  : vetor [1..3] de caractere\par
+        p  : vetor [1..3] de real\par
+        a  : vetor [1..3] de real\par
+        id : vetor [1..3] de inteiro\par
+        peso,altura: REAL\par
+        name: caractere\par
+        i,idd: inteiro\par
+    inicio\par
+\par
+    para i de 1 ate 3 faca\par
+             escreva("Digite o nome do individuo: ")\par
+             leia(name)\par
+             escreva("Digite sua identidade: ")\par
+             leia(idd)\par
+             escreva("Digite seu peso: ")\par
+             leia(peso)\par
+             escreva("Digite sua altura: ")\par
+             leia(altura)\par
+             n[i]<- name\par
+             p[i]<- peso\par
+             a[i]<- altura\par
+             id[i]<- idd\par
+        fimpara\par
+        para i de 1 ate 3 faca\par
+         escreval(n[i],":")\par
+   \tab\tab escreval("Identidade: ",id[i],"- Altura: ",a[i],"- Peso: ",p[i])\par
+\tab fimpara\par
+\par
+    fimalgoritmo\par
+=============QST02===========================\par
+/////////////////////////////////////////////////////////////////////////////\par
+/////////////////////////////////////////////////////////////////////////////\par
+=============QST03===========================\par
+algoritmo "Qst03Vetor"\par
+    var\par
+        num : vetor [1..10] de inteiro\par
+        i,n: inteiro\par
+    inicio\par
+\par
+    para i de 1 ate 10 faca\par
+              n <- i * 3\par
+              num[i]<- n\par
+        fimpara\par
+        para i de 1 ate 10 faca\par
+         escreval("Triplo de: ",i," e: ",num[i])\par
+\tab fimpara\par
+\par
+    fimalgoritmo\par
+=============QST03===========================\par
+/////////////////////////////////////////////////////////////////////////////\par
+/////////////////////////////////////////////////////////////////////////////\par
+=============QST04===========================\par
+algoritmo "Qst04Vetor"\par
+    var psg  : vetor [1..3] de caractere\par
+        nv  : vetor [1..3] de inteiro\par
+        p  : vetor [1..3] de inteiro\par
+        psgs: caractere\par
+        i,nvs,ps,d: inteiro\par
+    inicio\par
+\par
+    escreva("Digite a quantidade de passageiros:")\par
+    leia(d)\par
+    para i de 1 ate d faca\par
+             escreva("Digite o nome do passageiro: ")\par
+             leia(psgs)\par
+             escreva("Digite o numero do voo: ")\par
+             leia(nvs)\par
+             escreva("Digite o numero da poltrona: ")\par
+             leia(ps)\par
+             psg[i]<- psgs\par
+             nv[i]<- nvs\par
+             p[i]<- ps\par
+    fimpara\par
+       para i de 1 ate d faca\par
+         escreval(psg[i],":")\par
+   \tab\tab escreval("Numero do voo: ",nv[i]," - Poltrona: ",p[i])\par
+\tab fimpara\par
+\par
+    fimalgoritmo\par
+=============QST04===========================\par
+/////////////////////////////////////////////////////////////////////////////\par
+/////////////////////////////////////////////////////////////////////////////\par
+=============QST05===========================\par
+algoritmo "Qst05Vetor"\par
+    var\par
+        tt : vetor [1..12] de real\par
+        vlr,vlrjur : real\par
+        i,o,qtdm : inteiro\par
+\par
+\par
+inicio\par
+\par
+    o <- 0\par
+    escreval("Taxa fixa de 2.5%")\par
+    escreva("Informe o valor: ")\par
+    leia(vlr)\par
+    escreva("Informe o periodo: ")\par
+    leia(qtdm)\par
+\par
+\par
+    enquanto i < qtdm faca\par
+      vlrjur <- vlr * 0.025\par
+      vlr <- vlr + vlrjur\par
+      i <- i + 1\par
+      tt[i]<- vlr\par
+    fimenquanto\par
+        \par
+   para i de 1 ate 12 faca\par
+   \tab\tab escreval("Valor: ", I, "\'ba mes: ",tt[i])\par
+\tab fimpara\par
+\par
+fimalgoritmo\par
+=============QST05===========================\par
+/////////////////////////////////////////////////////////////////////////////\par
+/////////////////////////////////////////////////////////////////////////////\par
+=============QST06===========================\par
+algoritmo "Qst06Vetor"\par
+    var\par
+        name : vetor [1..20] de caractere\par
+        fts: vetor [1..20] de caractere\par
+        alun,F: caractere\par
+        i: inteiro\par
+\par
+\par
+inicio\par
+\par
+    para i de 1 ate 20 faca\par
+          escreva("Informe o nome do aluno: ")\par
+          leia(alun)\par
+          name[i]<-alun\par
+          escreva("Confirmar presenca: S para presente / N para falta: ")\par
+          leia(F)\par
+          fts[i]<-F\par
+    fimpara\par
+\par
+        para i de 1 ate 20 faca\par
+   \tab\tab escreval("Aluno: ",name[i]," - Presente: ",fts[i])\par
+\tab fimpara\par
+\par
+fimalgoritmo\par
+=============QST06===========================\par
+/////////////////////////////////////////////////////////////////////////////\par
+/////////////////////////////////////////////////////////////////////////////\par
+=============QST07===========================\par
+algoritmo "Qst07Vetor"\par
+      var\par
+   n:vetor[1..8] de inteiro\par
+   i,i2,temp:inteiro\par
+inicio\par
+\par
+    n[1] <- 5\par
+    n[2] <- 4\par
+    n[3] <- 7\par
+    n[4] <- 3\par
+    n[5] <- 2\par
+    n[6] <- 6\par
+    n[7] <- 1\par
+    n[8] <- 8\par
+\par
+   para i de 1 ate 8-1 faca\par
+      para i2 de i+1 ate 8 faca\par
+         se n[i] > n[i2] entao\par
+            temp<- n[i]\par
+            n[i]<- n[i2]\par
+            n[i2]<- temp\par
+         fimse\par
+      fimpara\par
+   fimpara\par
+\par
+   escreval("=====ORDEM CRESCENTE=======")\par
+   para i de 1 ate 8 faca\par
+      escreval(n[i])\par
+   fimpara\par
+   escreval("=====ORDEM DECRESCENTE=====")\par
+       para i de 8 ate 1 passo -1 faca\par
+              escreval(n[i])\par
+       fimpara\par
+\par
+fimalgoritmo\par
+=============QST07===========================\par
+/////////////////////////////////////////////////////////////////////////////\par
+/////////////////////////////////////////////////////////////////////////////\par
+=============QST08===========================\par
+algoritmo "Qst08Vetor"\par
+  var\par
+      name       :vetor [1..8] de caractere\par
+      valorVenda :vetor [1..8] de real\par
+      valorcusto:vetor[1..8] de real\par
+      temp:real\par
+      i,i2:inteiro\par
+  inicio\par
+\par
+     para i de 1 ate 8 faca\par
+     escreval()\par
+     escreva("Insira o nome do: ",i,"\'ba produto: ")\par
+     leia(name[i])\par
+     escreva("Valor de Venda do(a): ",name[i],": ")\par
+     leia(valorVenda[i])\par
+     escreva("Valor de Custo do(a): ",name[i],": ")\par
+     leia(valorCusto[i])\par
+\par
+   fimPara\par
+\par
+\par
+   para i de 1 ate 8-1 faca\par
+      para i2 de i+1 ate 8 faca\par
+         se valorcusto[i] > valorcusto[i2] entao\par
+            temp<- valorcusto[i]\par
+            valorcusto[i]<- valorcusto[i2]\par
+            valorcusto[i2]<- temp\par
+         fimse\par
+      fimpara\par
+   fimpara\par
+   \par
+   escreval()\par
+   escreval("=====5 Produtos com o maior custo=====")\par
+       para i de 8 ate 1 passo -1 faca\par
+              escreval(valorcusto[i])\par
+       fimpara\par
+       i<i+1\par
+       enquanto  valorcusto[1]  <> valorcusto[5] faca\par
+                 escreva("---",valorcusto[i])\par
+       fimenquanto\par
+\par
+fimalgoritmo\par
+\par
+=============QST08===========================\par
+/////////////////////////////////////////////////////////////////////////////\par
+/////////////////////////////////////////////////////////////////////////////\par
+=============QST09===========================\par
+algoritmo "Qst09Vetor"\par
+    var\par
+        num : vetor [1..12] de inteiro\par
+        i,pr,r: inteiro\par
+inicio\par
+    pr <- 2\par
+    para i de 1 ate 12 faca\par
+         pr<-pr+2\par
+         r<- pr * pr\par
+         num[i]<- r\par
+    fimpara\par
+        para i de 1 ate 12 faca\par
+   \tab\tab escreval("--> ",num[i])\par
+\tab fimpara\par
+fimalgoritmo\par
+=============QST09===========================\f1\lang1033\par
+}
+ 
